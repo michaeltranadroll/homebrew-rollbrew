@@ -14,11 +14,13 @@ class NextrollEngineer < Formula
   depends_on "terraform"
   # depends_on "intellij-idea"
   # depends_on "pycharm"
+  puts "This is checkpoint alpha"
   
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
+    puts "This is checkpoint bravo"
     system "/usr/local/bin/brew", "cask", "install", "java"
     system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
     system "/usr/local/bin/brew", "cask", "install", "pycharm"
@@ -27,6 +29,7 @@ class NextrollEngineer < Formula
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
+    puts "This is checkpoint charlie"
   end
 
   test do
