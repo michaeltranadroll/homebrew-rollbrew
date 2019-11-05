@@ -4,7 +4,7 @@
 class NextrollEngineer < Formula
   desc "Basic tools used by Nextroll's engineers"
   homepage ""
-  url "nextroll-engineer"
+  url "nextroll.com"
   version "0.1"
   sha256 ""
 
