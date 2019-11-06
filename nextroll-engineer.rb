@@ -21,6 +21,7 @@ class NextrollEngineer < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
+
     system "/usr/local/bin/brew", "cask", "install", "java"
     system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
     system "/usr/local/bin/brew", "cask", "install", "pycharm"
@@ -31,6 +32,8 @@ class NextrollEngineer < Formula
     # system "cmake", ".", *std_cmake_args
     puts "This is checkpoint charlie"
   end
+
+  install
 
   test do
     # `test do` will create, run in and delete a temporary directory.
