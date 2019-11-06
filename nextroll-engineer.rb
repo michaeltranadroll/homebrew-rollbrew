@@ -33,7 +33,7 @@ class NextrollEngineer < Formula
     puts "This is checkpoint charlie"
   end
 
-  install
+  puts "This is checkpoint delta"
 
   test do
     # `test do` will create, run in and delete a temporary directory.
@@ -47,4 +47,5 @@ class NextrollEngineer < Formula
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     system "false"
   end
+  puts "This is checkpoint echo"
 end
