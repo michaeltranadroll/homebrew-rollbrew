@@ -4,7 +4,7 @@
 class NextrollEngineer < Formula
   desc "Basic tools used by Nextroll's engineers"
   homepage ""
-  url "nextroll.com"
+  url "https://adroll.atlassian.net/wiki/download/attachments/10616854/Hologram-1.1-120-g74d0504.pkg?version=1&modificationDate=1476127001680&cacheVersion=1&api=v2"
   version "0.1"
   sha256 ""
 
@@ -36,6 +36,7 @@ class NextrollEngineer < Formula
   puts "This is checkpoint delta"
 
   test do
+    puts "This is checkpoint foxtrot"
     # `test do` will create, run in and delete a temporary directory.
     #
     # This test will fail and we won't accept that! For Homebrew/homebrew-core
