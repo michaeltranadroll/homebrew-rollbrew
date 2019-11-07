@@ -22,6 +22,7 @@ class NextrollEngineer < Formula
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
 
+    system "sudo chown -R $(whoami) $(brew --prefix)/*"
     system "/usr/local/bin/brew", "cask", "install", "java"
     system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
     system "/usr/local/bin/brew", "cask", "install", "pycharm"
