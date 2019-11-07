@@ -22,11 +22,7 @@ class NextrollEngineer < Formula
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
 
-    system "ls"
-    puts "OMGGGGGG"
-    system "pwd"
-    puts "WTFFFFFFF"
-    system "brew update"
+    system "/usr/local/bin/brew", "update"
 
     system "/usr/local/bin/brew", "cask", "install", "java"
     system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
