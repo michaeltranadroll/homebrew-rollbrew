@@ -22,7 +22,6 @@ class NextrollEngineer < Formula
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
 
-    system "/usr/local/bin/brew", "cask", "install", "java"
     system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
     system "/usr/local/bin/brew", "cask", "install", "pycharm"
     system "./configure", "--disable-debug",
@@ -30,7 +29,7 @@ class NextrollEngineer < Formula
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
-    puts "This is checkpoint charlie"
+    puts "This is checkpoint ZULU"
   end
 
   puts "This is checkpoint delta"
