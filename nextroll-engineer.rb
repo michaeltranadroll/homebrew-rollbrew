@@ -22,12 +22,14 @@ class NextrollEngineer < Formula
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
 
-    system "/usr/local/bin/brew", "update"
 
-    system "/usr/local/bin/brew", "cask", "install", "java"
-    system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
-    system "/usr/local/bin/brew", "cask", "install", "pycharm"
-    system "./configure", "--disable-debug",
+
+    exec "/usr/local/bin/brew", "update"
+
+    exec "/usr/local/bin/brew", "cask", "install", "java"
+    exec "/usr/local/bin/brew", "cask", "install", "intellij-idea"
+    exec "/usr/local/bin/brew", "cask", "install", "pycharm"
+    exec "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
