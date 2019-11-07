@@ -22,7 +22,7 @@ class NextrollEngineer < Formula
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
 
-    system "/usr/local/bin/brew", "cask", "install", "java"
+    system "brew", "cask", "install", "java"
     system "/usr/local/bin/brew", "cask", "install", "intellij-idea"
     system "/usr/local/bin/brew", "cask", "install", "pycharm"
     system "./configure", "--disable-debug",
@@ -36,7 +36,7 @@ class NextrollEngineer < Formula
   puts "This is checkpoint delta"
 
   test do
-    puts "This is checkpoint foxtrot"
+    puts "This is checkpoint foxtrot "
     # `test do` will create, run in and delete a temporary directory.
     #
     # This test will fail and we won't accept that! For Homebrew/homebrew-core
