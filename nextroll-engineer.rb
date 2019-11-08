@@ -21,10 +21,8 @@ class NextrollEngineer < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
-
-    exec "/usr/local/bin/brew", "cask", "install", "java"
-    exec "/usr/local/bin/brew", "cask", "install", "intellij-idea"
-    exec "/usr/local/bin/brew", "cask", "install", "pycharm"
+ 
+    exec 'brew cask install java'
     exec "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
