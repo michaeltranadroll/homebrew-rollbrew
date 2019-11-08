@@ -22,7 +22,7 @@ class NextrollEngineer < Formula
     # Remove unrecognized options if warned by configure
     puts "This is checkpoint bravo"
  
-    exec 'brew cask install java'
+    exec '/usr/local/bin/brew', 'cask install java'
     exec "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
